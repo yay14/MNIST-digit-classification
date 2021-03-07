@@ -6,13 +6,17 @@ A Bayesian classifier is built to classify the numbers in the MNIST handwritten 
 
 i) distinguish between ‘0’ and ‘1’ digits:
   Examples from MNIST dataset for '0' and '1' are
-      ![zero](/images/zero.png)
-      ![one](/images/one.png)
+  
+  ![zero](/images/zero.png)
+      
+  ![one](/images/one.png)
 
 ii) distinguish between ‘3’ and ‘8’ digits:
  Examples from MNIST dataset for '3' and '8' are
-      ![three](/images/three.png)
-      ![eight](/images/eight.png)
+ 
+   ![three](/images/three.png)
+   
+   ![eight](/images/eight.png)
 
 Next,the classification accuracy of the model is calculated and the ROC curves between GAR (Genuine Acceptance Rate) and FAR(False Acceptance Rate) curves are plotted for model evaluation purposes.
 
