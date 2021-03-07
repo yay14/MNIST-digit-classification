@@ -177,17 +177,21 @@ Model 2: 69.91%
 **Confusion Matrix**
 
 Model 1:
-    ![](/images/CM1.png)
+
+    ![cm1](/images/CM1.png)
 
 Model 2:
-    ![](/images/CM2.png)
+
+    ![cm2](/images/CM2.png)
 
 **ROC curve**
 
 Model 1:
-    ![](/images/ROC1.png)
+
+    ![roc1](/images/ROC1.png)
 
 Model 2:
-    ![](/images/ROC2.png)
+
+    ![roc2](/images/ROC2.png)
 
 
