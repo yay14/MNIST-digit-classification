@@ -4,15 +4,15 @@ MNIST ("Modified National Institute of Standards and Technology") is the classic
 
 A Bayesian classifier is built to classify the numbers in the MNIST handwritten digit recognition databases.The main tasks are to:
 
-i) distinguish between ‘0’ and ‘1’ digits
+i) distinguish between ‘0’ and ‘1’ digits:
   Examples from MNIST dataset for '0' and '1' are
-      ![](https://github.com/yay14/MNIST-digit-classification/blob/main/images/zero.png)
-      ![](https://github.com/yay14/MNIST-digit-classification/blob/main/images/one.png)
+      ![zero](/images/zero.png)
+      ![one](/images/one.png)
 
-ii) distinguish between ‘3’ and ‘8’ digits
+ii) distinguish between ‘3’ and ‘8’ digits:
  Examples from MNIST dataset for '3' and '8' are
-      ![](https://github.com/yay14/MNIST-digit-classification/blob/main/images/three.png)
-      ![](https://github.com/yay14/MNIST-digit-classification/blob/main/images/eight.png)
+      ![three](/images/three.png)
+      ![eight](/images/eight.png)
 
 Next,the classification accuracy of the model is calculated and the ROC curves between GAR (Genuine Acceptance Rate) and FAR(False Acceptance Rate) curves are plotted for model evaluation purposes.
 
@@ -160,17 +160,17 @@ Model 2: 69.91%
 **Confusion Matrix**
 
 Model 1:
-    ![](https://github.com/yay14/MNIST-digit-classification/blob/main/images/CM1.png)
+    ![](/images/CM1.png)
 
 Model 2:
-    ![](https://github.com/yay14/MNIST-digit-classification/blob/main/images/CM2.png)
+    ![](/images/CM2.png)
 
 **ROC curve**
 
 Model 1:
-    ![](https://github.com/yay14/MNIST-digit-classification/blob/main/images/ROC1.png)
+    ![](/images/ROC1.png)
 
 Model 2:
-    ![](https://github.com/yay14/MNIST-digit-classification/blob/main/images/ROC2.png)
+    ![](/images/ROC2.png)
 
 
