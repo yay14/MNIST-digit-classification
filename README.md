@@ -34,7 +34,8 @@ Then open the MNIST digits Classification.ipynb file and run in Jupyter notebook
 
 The MNIST dataset for Handwritten digit recognition is stored in IDX Format which is difficult to process so we need to convert it to Python Numpy Array.The following code snippet converts the data from binary format to numpy array using datatype conversion.
 
-    #..........................................................For training dataset..............................................................
+```python
+#..........................................................For training dataset..............................................................
     print("Training Dataset.......")
 
     for name in trainingfilenames.keys():
@@ -98,6 +99,8 @@ The MNIST dataset for Handwritten digit recognition is stored in IDX Format whic
     print("Training Set Labels shape ::",train_labels_array.shape)
     print("Training Set Image shape ::",train_images_array.shape)
 
+```
+
 The same is done for testing dataset as well.
 
 ## Data pre-processing
@@ -106,25 +109,30 @@ As we need only a subset of the whole dataset, we will now filter out those imag
     
 Model 1:
 
-    #counting test samples which are either 0 or 1
+```python
+#counting test samples which are either 0 or 1
     c=0
     for i in range(10000):
         if (test_labels_array[i]==1) or (test_labels_array[i]==0) :
             c=c+1
     print(c)
+```
  
  Model 2:
  
-    #counting test samples which are either 3 or 8
+ ```python
+  #counting test samples which are either 3 or 8
     c=0
     for i in range(10000):
         if (test_labels_array[i]==3) or (test_labels_array[i]==8) :
             c=c+1
     print(c)
+ ```
 
 Since the image is in 2d array format, we need to flatten it before model training.
 
-    #preparing test dataset
+```python
+ #preparing test dataset
     x_test =np.ndarray(shape=(c,784),dtype='int32')
     y_test = np.ndarray(shape=(c),dtype='int32')
     j=0
@@ -134,22 +142,27 @@ Since the image is in 2d array format, we need to flatten it before model traini
             y_test[j]=test_labels_array[i]
             j=j+1
         
+```
 ## Classification
 
-
-    #Classification using Gaussian Naive Bayes
+```python
+ #Classification using Gaussian Naive Bayes
     predicted = GNB_classifier.predict(x_test)
     print(predicted)
     
+```
+
 ## Results
 
-    #Summarising results
+```python
+#Summarising results
     print("\nClassification report for classifier %s:\n%s\n" % (GNB_classifier, metrics.classification_report(y_test, predicted)))
     disp = metrics.plot_confusion_matrix(GNB_classifier, x_test, y_test)
     disp.figure_.suptitle("Confusion Matrix")
     print("\nConfusion matrix:\n%s" % disp.confusion_matrix)
     print("\nAccuracy of the Algorithm: ", GNB_classifier.score(x_test, y_test))
     plt.show()
+```
 
 ## Comparison
 
