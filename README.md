@@ -6,11 +6,11 @@ A Bayesian classifier is built to classify the numbers in the MNIST handwritten 
 
 i) distinguish between ‘0’ and ‘1’ digits
   Examples from MNIST dataset for '0' and '1' are
-!(https://github.com/yay14/MNIST-digit-classification/blob/main/images/zero.png)!(https://github.com/yay14/MNIST-digit-classification/blob/main/images/one.png)
+![](https://github.com/yay14/MNIST-digit-classification/blob/main/images/zero.png)![](https://github.com/yay14/MNIST-digit-classification/blob/main/images/one.png)
 
 ii) distinguish between ‘3’ and ‘8’ digits
  Examples from MNIST dataset for '3' and '8' are
-!(https://github.com/yay14/MNIST-digit-classification/blob/main/images/three.png)!(https://github.com/yay14/MNIST-digit-classification/blob/main/images/eight.png)
+![](https://github.com/yay14/MNIST-digit-classification/blob/main/images/three.png)![](https://github.com/yay14/MNIST-digit-classification/blob/main/images/eight.png)
 
 Next,the classification accuracy of the model is calculated and the ROC curves between GAR (Genuine Acceptance Rate) and FAR(False Acceptance Rate) curves are plotted for model evaluation purposes.
 
@@ -26,7 +26,7 @@ Then open the MNIST digits Classification.ipynb file and run in Jupyter notebook
 
 ## Dataset
 
-The MNIST dataset for Handwritten digit recognition is stored in IDX Format which is difficult to process so we need to convert it to Python Numpy Array.The following code snippet does the same using datatype conversion.
+The MNIST dataset for Handwritten digit recognition is stored in IDX Format which is difficult to process so we need to convert it to Python Numpy Array.The following code snippet converts the data from binary format to numpy array using datatype conversion.
 
     #..........................................................For training dataset..............................................................
     print("Training Dataset.......")
@@ -158,17 +158,17 @@ Model 2: 69.91%
 **Confusion Matrix**
 
 Model 1:
-!(https://github.com/yay14/MNIST-digit-classification/blob/main/images/CM1.png)
+![](https://github.com/yay14/MNIST-digit-classification/blob/main/images/CM1.png)
 
 Model 2:
-!(https://github.com/yay14/MNIST-digit-classification/blob/main/images/CM2.png)
+![](https://github.com/yay14/MNIST-digit-classification/blob/main/images/CM2.png)
 
 **ROC curve**
 
 Model 1:
-!(https://github.com/yay14/MNIST-digit-classification/blob/main/images/ROC1.png)
+![](https://github.com/yay14/MNIST-digit-classification/blob/main/images/ROC1.png)
 
 Model 2:
-!(https://github.com/yay14/MNIST-digit-classification/blob/main/images/ROC2.png)
+![](https://github.com/yay14/MNIST-digit-classification/blob/main/images/ROC2.png)
 
 
